@@ -14,12 +14,8 @@ public class Feline extends Animal implements Predator {
         return "Кошачьи";
     }
 
-    public int getKittens() {
-        return getKittens(1);
+    @Override
+    public int getKittens(int count) {
+        return count;
     }
-
-    public int getKittens(int kittensCount) {
-        return kittensCount;
-    }
-
 }
